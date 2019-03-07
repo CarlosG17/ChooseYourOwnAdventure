@@ -6,15 +6,15 @@ var game = {
     levels: {
 
         start: {
-            message: "You come across a dark cave",
+            message: "You come across a funny dog",
             choices: [
                 {
-                    text: "Enter the cave",
+                    text: "Listen to it's jokes",
                     nextLevel: "cave",
                 },
 
                 {
-                    text: "Keep on moving",
+                    text: "Avoid it",
                     nextLevel: "field",
                 },
             ]
@@ -23,17 +23,23 @@ var game = {
         cave: {
             background_image: "fire.gif",
             music: "Final-Fantasy-7-Boss-Battle.mp3",
-            message: "You come across a fire monster or something!",
+            message: "He tells you a knock-knock joke about your mom",
             choices: [
                 {
-                    text: "Start over",
+                    text: "Tell him to go back to college",
                     nextLevel: "start",
+                },
+            
+                {
+                    text: "Laugh",
+                    nextLevel: "field",
                 },
             ]
         },
 
+
         field: {
-            message: "Some adventurer you are...",
+            message: "You go home to your quiet house, no one is home, you wonder what if",
             choices: [
                 {
                     text: "Start over",
