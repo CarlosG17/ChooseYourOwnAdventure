@@ -1,7 +1,7 @@
 // NOTE - You must have a level with the name "start".  This is used as the first level in the game.
 
 var game = {
-    music: "98_Lost_Mine.mp3",
+    music: "Date Event.mp3",
     background_image: "shiba.jpg",
     levels: {
 
@@ -11,7 +11,7 @@ var game = {
             choices: [
                 {
                     text: "Listen to it's jokes",
-                    nextLevel: "cave",
+                    nextLevel: "joke",
                 },
 
                 {
@@ -21,9 +21,9 @@ var game = {
             ]
         },
 
-        cave: {
+        joke: {
             background_image: "Funny-Knock-Knock-Jokes11.jpg",
-            music: "Final-Fantasy-7-Boss-Battle.mp3",
+            music: "Comedy.mp3",
             message: "He tells you a knock-knock joke about your mom",
             choices: [
                 {
@@ -40,7 +40,7 @@ var game = {
         
         bow: {
             background_image: "Bow.jpg",
-            
+            music: "Corner.mp3",
             message: "He bows and motions for you to follow",
             choices: [
                 {
@@ -55,15 +55,19 @@ var game = {
             ]
         },
         ending: {
-            
+            music:"Jiichan.mp3",
+            background_image: "twenty.png",
             message: "He takes you to a $20 bill and vanishes into thin air, you got money but at what cost",
         },
 
          badEnding: {
+              background_image: "street.jpeg",
+              music: "Yak.mp3",
             message: "you lose sight of him and wonder what if",
         },
         badEnd: {
              background_image: "cabin.jpg",
+              music: "Rejection.mp3",
             message: "You go home to your quiet house, no one is home, you wonder what if",
             choices: [
                 {
